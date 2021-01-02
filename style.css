@@ -1,8 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .background {
   display: block;
   height: 100vh;
   width: 100vw;
   background: -webkit-gradient(linear, left top, left bottom, from(#101030), to(#000000));
   background: linear-gradient(#101030, #000000);
+}
+
+.star {
+  display: block;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 5px #ffffff;
+          box-shadow: 0 0 5px #ffffff;
+  position: relative;
+  top: 10%;
+  left: 10%;
 }
 /*# sourceMappingURL=style.css.map */
