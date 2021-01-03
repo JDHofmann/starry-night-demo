@@ -7,7 +7,7 @@
     display: block;
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(#101030, #000000);
+    background: linear-gradient(#000000, #101030 );
 }
 
 .star {
@@ -16,6 +16,6 @@
     width: 3px;
     border-radius: 50%;
     background: #ffffff;
-    box-shadow: 0 0 5px #ffffff;
+    box-shadow: 0 0 3px #ffffff;
     position: absolute;
 }
