@@ -16,6 +16,25 @@
     width: 3px;
     border-radius: 50%;
     background: #ffffff;
-    box-shadow: 0 0 3px #ffffff;
+    box-shadow: 0 0 4px #ffffff;
     position: absolute;
+}
+
+.blue {
+    background: #b0ffff;
+}
+
+.red {
+    background: #ffc0d0;
+}
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#80008000 40%, #1010a060);
+    z-index: 10;
 }
