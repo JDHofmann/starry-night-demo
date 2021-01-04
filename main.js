@@ -60,4 +60,3 @@ setTimeout(setInterval(blinkingStars, 4000), 1000);
 setTimeout(setInterval(blinkingStars, 4000), 2000);
 
 setTimeout(setInterval(blinkingStars, 4000), 3000);
-// setTimeout(setInterval(blinkingStars, 6000), 4000);
