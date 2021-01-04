@@ -13,21 +13,49 @@
 
 .star {
   display: block;
-  height: 3px;
-  width: 3px;
+  height: 1px;
+  width: 1px;
   border-radius: 50%;
   background: #ffffff;
   -webkit-box-shadow: 0 0 4px #ffffff;
           box-shadow: 0 0 4px #ffffff;
   position: absolute;
+  -webkit-transition: .85s;
+  transition: .85s;
+  opacity: 1;
+}
+
+.blink {
+  -webkit-transition: .85s;
+  transition: .85s;
+  -webkit-box-shadow: 0 0 4px .5px #ffffff;
+          box-shadow: 0 0 4px .5px #ffffff;
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 .blue {
   background: #b0ffff;
+  -webkit-box-shadow: 0 0 5px #b0ffff;
+          box-shadow: 0 0 5px #b0ffff;
+}
+
+.purple {
+  background: #e2c5fc;
+  -webkit-box-shadow: 0 0 5px #e2c5fc;
+          box-shadow: 0 0 5px #e2c5fc;
+}
+
+.blue {
+  background: #ffe0cc;
+  -webkit-box-shadow: 0 0 5px #ffe0cc;
+          box-shadow: 0 0 5px #ffe0cc;
 }
 
 .red {
   background: #ffc0d0;
+  -webkit-box-shadow: 0 0 5px #ffc0d0;
+          box-shadow: 0 0 5px #ffc0d0;
 }
 
 .overlay {
@@ -37,8 +65,8 @@
   display: block;
   top: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #80008000), to(#1010a060));
-  background: linear-gradient(#80008000 40%, #1010a060);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #80008000), to(#1010a030));
+  background: linear-gradient(#80008000 40%, #1010a030);
   z-index: 10;
 }
 /*# sourceMappingURL=style.css.map */
