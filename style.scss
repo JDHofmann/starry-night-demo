@@ -1,4 +1,8 @@
 $white: #ffffff;
+$blue: #b0ffff;
+$purple: #e2c5fc;
+$yellow: #ffe0cc;
+$red: #ffc0d0;
 
 * {
     padding: 0;
@@ -32,23 +36,23 @@ $white: #ffffff;
 }
 
 .blue {
-    background: #b0ffff;
-    box-shadow: 0 0 5px #b0ffff;
+    background: $blue;
+    box-shadow: 0 0 5px $blue;
 }
 
 .purple {
-    background: #e2c5fc;
-    box-shadow: 0 0 5px #e2c5fc;
+    background: $purple;
+    box-shadow: 0 0 5px $purple;
 }
 
-.blue {
-    background: #ffe0cc;
-    box-shadow: 0 0 5px #ffe0cc;
+.yellow {
+    background: $yellow;
+    box-shadow: 0 0 5px $yellow;
 }
 
 .red {
-    background: #ffc0d0;
-    box-shadow: 0 0 5px #ffc0d0;
+    background: $red;
+    box-shadow: 0 0 5px $red;
 }
 
 .overlay {
