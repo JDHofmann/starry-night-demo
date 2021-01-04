@@ -1,3 +1,5 @@
+$white: #ffffff;
+
 * {
     padding: 0;
     margin: 0;
@@ -15,8 +17,8 @@
     height: 1px;
     width: 1px;
     border-radius: 50%;
-    background: #ffffff;
-    box-shadow: 0 0 4px #ffffff;
+    background: $white;
+    box-shadow: 0 0 4px $white;
     position: absolute;
     transition: .85s;
     opacity: 1;
@@ -24,7 +26,7 @@
 
 .blink {
     transition: .85s;
-    box-shadow: 0 0 4px .5px #ffffff;
+    box-shadow: 0 0 4px .5px $white;
 
     transform: scale(2);
 }
