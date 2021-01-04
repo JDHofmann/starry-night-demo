@@ -24,14 +24,13 @@ $red: #ffc0d0;
     background: $white;
     box-shadow: 0 0 4px $white;
     position: absolute;
-    transition: .85s;
+    transition: 1s ease;
     opacity: 1;
 }
 
 .blink {
-    transition: .85s;
+    // transition: 1s ease;
     box-shadow: 0 0 4px .5px $white;
-
     transform: scale(2);
 }
 

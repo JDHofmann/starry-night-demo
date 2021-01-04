@@ -32,9 +32,7 @@ const createStars = (quantity, maxSize, height, topOffest, width, leftOffset) =>
 const stopBlink = (stars) => {
     for(let i = 0; i < stars.length; i++){
         stars[i].classList.remove("blink")
-        
     }
-    console.log("stop")
 }
 
 const blinkingStars = () => {
@@ -55,8 +53,11 @@ createStars(100, 2, 20, 15, 60, 7);
 createStars(100, 3, 25, 0, 40, 0);
 createStars(100, 3, 50, 5, 35, 70);
 createStars(100, 2.5, 20, 0, 60, 20);
-const blink = setInterval(blinkingStars, 4000)
-setTimeout(setInterval(blinkingStars, 4000), 1000);
-setTimeout(setInterval(blinkingStars, 4000), 2000);
+const blink = setInterval(blinkingStars, 6000)
+setTimeout( function(){setInterval(blinkingStars, 6000)}, 1500);
+setTimeout( function(){setInterval(blinkingStars, 6000)}, 3000);
+setTimeout( function(){setInterval(blinkingStars, 6000)}, 4500);
 
-setTimeout(setInterval(blinkingStars, 4000), 3000);
+
+// setTimeout(setInterval(blinkingStars, 4000), 2000);
+// setTimeout(setInterval(blinkingStars, 4000), 3000);
