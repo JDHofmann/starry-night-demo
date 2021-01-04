@@ -18,11 +18,25 @@
     background: #ffffff;
     box-shadow: 0 0 4px #ffffff;
     position: absolute;
+    transition: .85s;
+    opacity: 1;
+}
+
+.blink {
+    transition: .85s;
+    box-shadow: 0 0 4px .5px #ffffff;
+
+    transform: scale(2);
 }
 
 .blue {
     background: #b0ffff;
     box-shadow: 0 0 5px #b0ffff;
+}
+
+.purple {
+    background: #e2c5fc;
+    box-shadow: 0 0 5px #e2c5fc;
 }
 
 .blue {
@@ -42,6 +56,6 @@
     display: block;
     top: 0;
     left: 0;
-    background: linear-gradient(#80008000 40%, #1010a060);
+    background: linear-gradient(#80008000 40%, #1010a030);
     z-index: 10;
 }

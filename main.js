@@ -17,17 +17,34 @@ const createStars = (quantity, maxSize, height, topOffest, width, leftOffset) =>
 
         if ( i % 3 === 0 ){
             star.classList.add("blue")
-        } else if ( (i-1) % 3 === 0){
-            top = top * .7
-            star.style.top = `${top}%`
-        } else if ( i % 7 === 0){
-            star.classList.add("red")
         } else if ( i % 5 === 0){
             star.classList.add("yellow")
+        } else if ( ( i -1 ) & 5 === 0){
+            star.classList.add("purple")
+        } else if ( i % 7 === 0){
+            star.classList.add("red")
         } 
 
         bkgd.append(star)
     }
+}
+
+const stopBlink = (stars) => {
+    for(let i = 0; i < stars.length; i++){
+        stars[i].classList.remove("blink")
+        
+    }
+    console.log("stop")
+}
+
+const blinkingStars = () => {
+    let index = Math.ceil(Math.random() * 100)
+    let stars = document.getElementsByClassName(`${index.toString()}`)
+    console.log(index)
+    for(let i = 0; i < stars.length; i++){
+        stars[i].classList.add("blink")
+    }
+    setTimeout(function(){stopBlink(stars)}, 1000);
 }
 
 createStars(700, 2.75, 100, 0, 100, 0);
@@ -38,3 +55,9 @@ createStars(100, 2, 20, 15, 60, 7);
 createStars(100, 3, 25, 0, 40, 0);
 createStars(100, 3, 50, 5, 35, 70);
 createStars(100, 2.5, 20, 0, 60, 20);
+const blink = setInterval(blinkingStars, 4000)
+setTimeout(setInterval(blinkingStars, 4000), 1000);
+setTimeout(setInterval(blinkingStars, 4000), 2000);
+
+setTimeout(setInterval(blinkingStars, 4000), 3000);
+// setTimeout(setInterval(blinkingStars, 6000), 4000);
