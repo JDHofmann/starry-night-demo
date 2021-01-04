@@ -38,11 +38,10 @@ const stopBlink = (stars) => {
 const blinkingStars = () => {
     let index = Math.ceil(Math.random() * 100)
     let stars = document.getElementsByClassName(`${index.toString()}`)
-    console.log(index)
     for(let i = 0; i < stars.length; i++){
         stars[i].classList.add("blink")
     }
-    setTimeout(function(){stopBlink(stars)}, 1000);
+    setTimeout(function(){stopBlink(stars)}, 1200);
 }
 
 createStars(700, 2.75, 100, 0, 100, 0);
@@ -57,7 +56,3 @@ const blink = setInterval(blinkingStars, 6000)
 setTimeout( function(){setInterval(blinkingStars, 6000)}, 1500);
 setTimeout( function(){setInterval(blinkingStars, 6000)}, 3000);
 setTimeout( function(){setInterval(blinkingStars, 6000)}, 4500);
-
-
-// setTimeout(setInterval(blinkingStars, 4000), 2000);
-// setTimeout(setInterval(blinkingStars, 4000), 3000);
